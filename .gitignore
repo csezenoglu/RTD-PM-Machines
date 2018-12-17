@@ -1,0 +1,14 @@
+#build folder that includes html files
+_build/
+#visual studio code files
+.vscode/
+
+__pycache__
+*.pyc
+*.mo
+
+# Finder (MacOS) makes these automatically.
+.DS_Store
+
+# And Windows keeps creating these.
+Thumbs.db
