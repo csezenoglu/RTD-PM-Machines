@@ -4,11 +4,12 @@ Permanent Magnet Machines
 
 .. toctree::
    :maxdepth: 2
-   :caption: Permanent Magnet Machines
+   :caption: General
    :name: sec-general
    :numbered:
 
    content/introduction
+   content/ideal-sinewave-motor
    content/zreferences
 
 
@@ -28,3 +29,6 @@ Permanent Magnet Machines
 
    ipm/index
 
+.. Note:: 
+
+    ``*`` The sentences with this symbol will be rewritten.
