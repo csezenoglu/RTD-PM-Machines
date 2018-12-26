@@ -19,7 +19,8 @@ Permanent Magnet Machines
    :name: sec-afpm
    :numbered:   
 
-   afpm/index
+   afpm/introduction
+   afpm/magnetic-field-in-airgap
 
 .. toctree::
    :maxdepth: 2
