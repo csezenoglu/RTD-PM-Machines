@@ -56,8 +56,18 @@ Furlani expanded his work in 1994 and introduced a more realistic approach. Comp
     B_{gap,y}\left(x,y\right)=\frac{4\mu_0^2M_s}{\mu}\sum_{n=1,3,5\ldots}^{\infty}{\frac{{(-1)}^{(n-1)/2}}{n\pi K(n,h,g,l,\mu)}\bullet\cosh{\left(\frac{n\pi y}{l}\right)}\cos{\left(\frac{n\pi x}{l}\right)}} \\
     K\left(n,h,g,l,\mu\right)=-\frac{\mu_0}{\mu}\cosh{\left(\frac{n\pi g}{l}\right)}+\sinh{\left(\frac{n\pi g}{l}\right)}\bullet\coth{\left(\frac{n\pi}{l}(g-h)\right)}
 
+.. rubric:: Acquiring Magnetization of Magnet
+
+In order to reach an approximate M value in a magnet, the magnet sample is cut by EDM (electric discharge machining) and after magnetization is magnetized, the corrosion is examined by ultrasonic methods, then the magnetic flux density is measured in the middle of the cylinder. In a cylindrical example, the magnetic flux density can be calculated by the following formula:
+
+.. math::
+
+    B_z=\frac{\mu_0M}{2}\left[\frac{z+L}{\sqrt{\left(z+L\right)^2+a^2}}-\frac{z}{\sqrt{z^2+a^2}}\right]
+
 Solution with Magnetic Vector Potential
 ---------------------------------------
+
+Furlani revealed semi-analytical three-dimensional expression of magnetic flux density in 1994. The vector potential was used and the numerical integral of the Green function was taken in empty space over a single variable. Field components are expressed as finite sums of fundamental functions :cite:`furlani:1994three`. Then he applied this equation to a motor and tested it with finite element method in 1997 :cite:`furlani:1997three`.
 
 J.R. Bumby et al. obtained the expressions of the magnetic field in the air gap of the cored AFPM by using the current surface technique and vector potential distribution in 2004 :cite:`bumby:2004`. By using this method in 2005, they have reached the equations of the magnetic field in the air gap for the coreless AFPM machine :cite:`bumby:2005`. A similar technique was used in :cite:`smith:1999` and  :cite:`wallace:2001` publications.
 
@@ -76,7 +86,7 @@ The problem is symmetrical on both sides of the centerline and the iron limit ca
 
 .. math::
 
-    H_x=\frac{1}{\mu_0}\frac{\partial A}{\partial y}\bigm \\
+    H_x=\frac{1}{\mu_0}\frac{\partial A}{\partial y} \\
     H_y=-\frac{1}{\mu_0}\frac{\partial A}{\partial x}
 
 It then obtained the current density distribution to obtain the final equations for the air gap :cite:`bumby:2005`. 
@@ -100,27 +110,4 @@ Here;
 
     : afpm-model-for-laplace-solution
 
-2008 yılında G.F. Price v.d. yaptıkları çalışmada 2004 yılında J.R. Bumby v.d. nin yaptığı analitik hesaplamaları temel alarak bir rüzgar jeneratörü tasarlamışlardır.
-
-Yine E.P. Furlani 1994 yılında manyetik akı yoğunluğunun yarı analitik üç boyutlu ifadesini ortaya koymuştur. Çözüm yönteminde vektör potansiyel kullanılmış ve tek bir değişken üzerinden boş uzayda Green fonksiyonunun nümerik integrali alınmıştır. Alan bileşenleri temel fonksiyonların sonlu toplamları şeklinde ifade edilmiştir. 
-
-.. math::
-
-    B_z\left(r,\theta,z\right)=\frac{\mu_0M}{4\pi}\sum_{s=1}^{N_{pole}}\sum_{j=1}^{2}\sum_{k=1}^{2}\left(-1\right)^{\left(s+1+j+k\right)}θs2-θs1Nθm=0NθSθmrcosθ¬ ¬--θs'm-rsjrsjI1r,θ,z;rsj,¬θs'm,zsk+rs2-rs1Nrn=0NrSrnrsinθ¬ -θsjI1r,θ,z;rs'n,θsj,zsk
-
-E.P. Furlani 1997 yılında ortaya koyduğu bu eşitliği kullanarak motor optimizasyonu yaparak bir motora uygulamış ve sonlu elemanlar yöntemi ile test etmiştir.
-
-The analytical method of images using magnetic charge
------------------------------------------------------
-
-2006 Characteristic analysis of the slotless axial-flux type brushless DC motors using image method 188
-
-Manyetik Akı yoğunluğu Eşitlikleri
-----------------------------------
-
-Bir mıknatıstaki yaklaşık M değerine ulaşmak için, mıknatıs örneği EDM (electric discharge machining, tel erozyon) ile kesilir ve mıknatıs manyetize edildikten sonra ultrasonik yöntemlerle  korozyon incelenir, sonra silindirin tam ortasında manyetik akı yoğunluğu ölçülür. Silindirik bir örnekte manyetik akı yoğunluğu aşağıdaki formül ile hesaplanabilir: [24]
-
-.. math::
-
-    B_z=\frac{\mu_0M}{2}\left[\frac{z+L}{\sqrt{\left(z+L\right)^2+a^2}}-\frac{z}{\sqrt{z^2+a^2}}\right]
-
+In 2008, G.F. Price et al. designed a wind generator based on Bumby's analytical calculations :cite:`price:2008`.
