@@ -10,7 +10,7 @@ Permanent Magnet Machines
 
    content/introduction
    content/ideal-sinewave-motor
-   content/zreferences
+   content/components
 
 
 .. toctree::
@@ -21,6 +21,7 @@ Permanent Magnet Machines
 
    afpm/introduction
    afpm/magnetic-field-in-airgap
+   afpm/magnetic-circuit-model
 
 .. toctree::
    :maxdepth: 2
@@ -29,6 +30,14 @@ Permanent Magnet Machines
    :numbered:   
 
    ipm/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Appendices
+   :name: sec-appendices  
+
+   appendices/nomenclature
+   appendices/zreferences
 
 .. Note:: 
 
