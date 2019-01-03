@@ -1,27 +1,18 @@
 Magnetic Circuit Model
 ======================
 
-Hava nüveli iki stator üç rotorlu makinenin modeli şekildeki gibidir [1].
+The analysis of systems with one or more closed magnetic flux path loops can be done with a magnetic circuit. An example of a magnetic circuit model of a two rotor and a coreless stator afpm machine is shown in :numref:`afpm-magnetic-circuit-model`.
 
-.. figure:: ../img/magnetic-circuit-model.png
+.. figure:: ../img/afpm-magnetic-circuit-model.png
     :align: center
-    :scale: 100 %
-    :name: magnetic-circuit-model
+    :scale: 80 %
+    :name: afpm-magnetic-circuit-model
 
-: magnetic-circuit-model.
+    : Magnetic circuit model of a two rotor and a coreless stator afpm machine.
 
-Sırasıyla elemanların modeli çıkarılır.
+For accurate analysis with the magnetic circuit model, the model of each element should be obtained in detail. Sadeghierad et al. investigated magnetic circuit model elements of a high-speed AFPM generator :cite:`sadeghierad:2008leakage`, :cite:`sadeghierad:2009detail`. Zheng et al. investigated a one rotor one stator AFPM machine with using magnetic circuit model. Then a simplified model was obtained that ignores the back-iron reluctances :cite:`zheng:2005analysis`. 
 
-Diğer bir çalışmada tek rotor tek statorlu bir makinenin manyetik eşdeğer devre modeli aşağıdaki gibi verilmiştir [2]: 
-
-Zheng et al. investigated a one rotor one stator AFPM with using magnetic circuit concept. The model of machine is seen Fİg.  Simplified model that ignores the back iron reluctances is also seen in Fig [Zheng et al., 2005]. 
-
-.. figure:: ../img/model-zheng.png
-    :align: center
-    :scale: 100 %
-    :name: model-zheng
-
-: model-zheng.
+Zheng:
 
 Flux of permanent magnets and useful flux is calculated by
 
@@ -75,10 +66,10 @@ Permanent Magnet Model
 
 Permanent magnet model consists of a reluctance (magnetic resistance) and a magneto motive force (mmf) :cite:`sadeghierad:2009detail`.
 
-.. figure:: ../img/pm-model.png
+.. figure:: ../img/pm-magnetic-circuit-model.png
     :align: center
     :scale: 100 %
-    :name: pm-model
+    :name: pm-magnetic-circuit-model
 
     : Permanent Magnet Model (a) Thevenin Equivalent Model, (b) Norton Equivalent Model.
 
@@ -94,7 +85,7 @@ Formulations for Norton Equivalent Model
 
 .. math::
 
-    \phi_m=B_mA_m=\left(B_r+\mu_0\mu_{rm}H_m\right)A_m \\
+    \phi_m=B_m A_m=B_r A_m+\mu_0\mu_{rm}H_m A_m \\
     \phi_m=\phi_r+\frac{F_m}{R_m}
 
 Leakage Flux Model
@@ -248,7 +239,7 @@ There are number of techniques for modeling flux flow in an air-gap as depicted 
     :scale: 100 %
     :name: air-gap-model-1
 
-: Air gap model.
+    : Air gap model.
 
 In this figure, the fringing flux is assumed to follow a circular arc from the side of one block, travel in a straight line across the gap area, then follow a circular arc to the other block. The calculation of the air gap permeance using this circular-arc, straight-line approximation utilizes the fact that permeances add in parallel just as electrical conductances do. The air gap permeance Pg in Fig. 2.9 is equal to the sum of P_s and 4P_f (one P_f for each side of the block) [Hanselman, 2003].
  
@@ -257,7 +248,7 @@ In this figure, the fringing flux is assumed to follow a circular arc from the s
     :scale: 100 %
     :name: air-gap-model-2
 
-: Air gap model in detail.
+    : Air gap model in detail.
 
 .. math::
 

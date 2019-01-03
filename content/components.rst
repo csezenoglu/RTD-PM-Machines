@@ -5,7 +5,7 @@ Components
 Permanent Magnets
 =================
 
-The following factors can be considered in the selection of magnets :cite:`sadeghierad:2008leakage`:
+The following factors can be considered in the selection of magnets :cite:`sadeghierad:2008leakage`
 
 - Magnetic properties (Br, Hc, BHmax etc.)
 - Ability to work at higher temperatures (SmCo can operate at higher temperatures than NdFeB.)
