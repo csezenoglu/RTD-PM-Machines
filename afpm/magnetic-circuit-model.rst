@@ -77,16 +77,21 @@ Formulations for Thevenin Equivalent Model
 
 .. math::
 
-    R_m=\frac{l_m}{\mu_0\mu_{rm}A_m} \\
-    F_m=\phi_rR_m \\
-    \phi_r={B_rA}_m
+    \begin{align}
+        R_m &= \frac{l_m}{\mu_0\mu_{rm}A_m} \\
+        F_m &= \phi_rR_m \\
+        \phi_r &= {B_rA}_m
+    \end{align}
 
 Formulations for Norton Equivalent Model
 
 .. math::
 
-    \phi_m=B_m A_m=B_r A_m+\mu_0\mu_{rm}H_m A_m \\
-    \phi_m=\phi_r+\frac{F_m}{R_m}
+    \begin{align}
+        \phi_m &= B_m A_m \\
+        &= B_r A_m+\mu_0\mu_{rm}H_m A_m \\
+        &=\phi_r+\frac{F_m}{R_m}
+    \end{align}
 
 Leakage Flux Model
 ------------------
