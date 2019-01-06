@@ -1,3 +1,5 @@
+.. 1995 Design of slotless torus generators with reduced voltage regulation
+
 Magnetic Circuit Model
 ======================
 
@@ -96,12 +98,16 @@ Formulations for Norton Equivalent Model
 Leakage Flux Model
 ------------------
 
-Sürekli mıknatısın kendi kaçak akı modeli ve iki mıknatıs arasındaki akı modeli aşağıdaki gibidir [11, 142]. 
+In general, leakage flux is existed two different fashion in permanent magnet machines. Self-leakage flux is existed between permanent magnet and back iron. The other one is seen between two adjacent permanent magnets. In :numref:`pm-leakage-flux-model`, 1a and 1b are self-leakage flux paths of magnet and 2 is the leakage flux path between two magnets.
 
-öylelikle yüksek hızlı eksenel akılı üreteç için kaçak akı modeli şekildeki gibi elde edilmiştir [142]:
+.. figure:: ../img/pm-leakage-flux-model.png
+    :align: center
+    :scale: 100 %
+    :name: pm-leakage-flux-model
 
-In general, leakage flux is existed two different fashion in permanent magnet machines. Self-leakage flux is existed between permanent magnet and back iron. The other one is seen between two adjacent permanent magnets. Self-leakage flux and leakage flux between two PMs are shown R_{L1} and R_{L2} respectively.
+    : PM Flux Leakage Model.
 
+Self-leakage flux and leakage flux between two PMs are shown :math:`R_{L1}` and :math:`R_{L2}` respectively in magnetic circuit model.
 
 .. figure:: ../img/pm-leakage-flux-circuit-model.png
     :align: center
@@ -110,14 +116,6 @@ In general, leakage flux is existed two different fashion in permanent magnet ma
 
     : PM Flux Leakage Circuit Model.
 
-Mıknatısın kendi kaçak akısı (RL1) B ve C yolları olarak şekildeki gibidir:
-
-.. figure:: ../img/pm-leakage-flux-model.png
-    :align: center
-    :scale: 100 %
-    :name: pm-leakage-flux-model
-
-    : PM Flux Leakage Model.
 
 Self-leakage flux equations:
 
