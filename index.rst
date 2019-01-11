@@ -10,6 +10,7 @@ Permanent Magnet Machines
 
    content/introduction
    content/ideal-sinewave-motor
+   content/armature-reaction
    content/components
 
 
