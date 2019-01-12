@@ -79,7 +79,7 @@ The torque is
 
 .. math::
 
-    T = \frac{3}{2} I \sqrt 2 \frac{\pi r_1 l B_{peak} N_S}{2} \sin \beta
+    T = \frac{3}{2} I \sqrt 2 \frac{\pi r_1 l B_{peak} N_s}{2} \sin \beta
 
 where :math:`\beta = -\alpha`. The angle :math:`\beta` is called torque angle, and is positive for motoring :cite:`miller:1989`.
 
@@ -87,3 +87,21 @@ where :math:`\beta = -\alpha`. The angle :math:`\beta` is called torque angle, a
 
     Although the armature-reaction mmf modifies the airgap flux-density, it does not figure in the torque expression unless it significantly affects the saturation level of the magnetic circuit :cite:`miller:1989`. ``*``
 
+EMF
+===
+
+#The emf equation of the sinewave motor can be derived by considering the emf induced in the elementary group of conductors. Then, rms phase emf is
+
+.. math::
+
+    E_{ph} = \frac{\pi}{2\sqrt{2}}\frac{B_{peak}l\omega r_1 N_s}{p}
+
+and line-line emf is :math:`\sqrt{3}E_{ph}`. 
+
+#The emf equation can also be derived from Faraday's law. This alternative method is included here because it is the basis of the phasor diagram and provides the means for calculating the inductive volt drop due to armature reaction. Faraday's law is more rigorous than the BLV formulation, but it is useful to show that for E both methods give the same result.
+
+#By Faraday's law, the instantaneous e.m.f. induced in the stationary phase winding of Fig. 5.1 is given by
+
+.. math::
+
+    e = - \frac{d\Phi}{dt}
