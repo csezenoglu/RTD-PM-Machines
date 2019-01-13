@@ -26,11 +26,3 @@ Abbreviation
 ************
 
 - PM: Permanent Magnet
-
-**********
-Dictionary
-**********
-
-Flux: Flux is flow. Flux is the flow of the magnetic field, which is shown by field lines
-
-Flux-linkage: is the interference of two or more paths of flux. Flux linkage is the Flux through a coil multiplied by the number of turns the flux passes through

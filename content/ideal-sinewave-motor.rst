@@ -90,6 +90,18 @@ where :math:`\beta = -\alpha`. The angle :math:`\beta` is called torque angle, a
 EMF
 ===
 
+.. note:: 
+
+    So the "flux rule" that the emf in a circuit is equal to the rate of change of the magnetic flux through the circuit applies whether the flux changes because the field changes or because the circuit moves (or both) ...
+
+    Yet in our explanation of the rule we have used two completely distinct laws for the two cases :math:`– v × B` for "circuit moves" and :math:`∇ × E = −∂_tB` for "field changes".
+
+    We know of no other place in physics where such a simple and accurate general principle requires for its real understanding an analysis in terms of two different phenomena.
+
+    Richard P. Feynman, The Feynman Lectures on Physics
+
+Emf equation can be derived two different approach:
+
 #The emf equation of the sinewave motor can be derived by considering the emf induced in the elementary group of conductors. Then, rms phase emf is
 
 .. math::
@@ -104,4 +116,35 @@ and line-line emf is :math:`\sqrt{3}E_{ph}`.
 
 .. math::
 
-    e = - \frac{d\Phi}{dt}
+    e = - \frac{d\Psi}{dt}
+
+#On open-circuit there is no current in the coil, and all the flux is due to the magnet. The flux through the elementary coil is
+
+.. math::
+
+    \phi = \frac{B_{peak}Dl}{p} \sin{(p\theta)}\cos{(\omega t + \alpha)}
+
+#The flux-linkage of the elementary coil is
+
+.. math::
+
+    d\Psi = \phi [\frac{N_s}{2} \sin{p \theta} d \theta]
+
+#The total flux-linkage of the winding is
+
+.. math::
+
+    \Psi = \frac{B_{peak}lr_1N_s\pi}{2p} \cos{(\omega t + \alpha)}
+
+#By Faraday's law the instantaneous phase e.m.f. is
+
+.. math::
+
+    e = - \frac{d\Psi}{dt} = \omega \frac{B_{peak}lr_1N_s\pi}{2p} \sin{(\omega t + \alpha)}
+
+#The r.m.s. phase e.mf. is
+
+.. math::
+
+    E_{ph} = \frac{\omega}{\sqrt{2}} \frac{B_{peak}lr_1N_s\pi}{2p}
+

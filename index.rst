@@ -10,7 +10,6 @@ Permanent Magnet Machines
 
    content/introduction
    content/ideal-sinewave-motor
-   content/armature-reaction
    content/components
 
 
@@ -33,12 +32,13 @@ Permanent Magnet Machines
    ipm/index
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Appendices
-   :name: sec-appendices  
+    :maxdepth: 2
+    :caption: Appendices
+    :name: sec-appendices  
 
-   appendices/nomenclature
-   appendices/zreferences
+    appendices/nomenclature
+    appendices/zreferences
+    dictionary/index
 
 .. Note:: 
 
