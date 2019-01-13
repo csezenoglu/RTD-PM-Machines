@@ -117,60 +117,33 @@ Self-leakage flux and leakage flux between two PMs are shown :math:`R_{L1}` and 
     : PM Flux Leakage Circuit Model.
 
 
-Self-leakage flux equations:
+Self-leakage flux equations :cite:`wu:1995design`:
 
 .. math::
 
-    R_{L1}=R_B||R_C \\
-    R_B=\frac{2(P/2)}{\mu_0\delta\left(\left(D_i-L_{PM}\right)Ln\frac{L_{PM}+2g}{L_{PM}}+2g\right)} \\
-    R_C=\frac{9(P/2)}{\mu_0\delta\left(\left({3D}_o+{2L}_{PM}\right)Ln\frac{L_{PM}+3g}{L_{PM}}-6g\right)}
+    \begin{align}
+        R_{L1}&=R_{LA}||R_{LB} \\
+        R_{LA} &= \frac{p}{\mu_0 k_{pp} \left( \left(D_i - l_m\right) \ln{ (\frac{l_m+2g}{l_m}) } +2g \right)} \\
+        R_{LB} &= \frac{9p/2}{\mu_0 k_{pp} \left( \left(3D_o + 2l_m\right) \ln{ (\frac{l_m+3g}{l_m}) } -6g \right)}
+    \end{align}
 
-Aynı kişilerin diğer bildirisinde eşitlikler şu şekildedir:
-
-.. math::
-
-    R_{L1}=\frac{1}{P_B+P_C} \\
-    P_B=\frac{2(P/2)}{\delta\left(\left(D_i-L_{PM}\right)Ln\frac{L_{PM}+2g}{L_{PM}}+2g\right)} \\
-    P_C=\frac{9(P/2)}{\delta\left(\left({3D}_o+{2L}_{PM}\right)Ln\frac{L_{PM}+3g}{L_{PM}}-6g\right)}
-
-İki mıknatıs arasındaki kaçak akı ise şu şekildedir:
+Leakage flux between two PMs is :cite:`sadeghierad:2009detail`:
 
 .. math::
 
-    R_{L2}=\frac{1}{\mu_0{Per}_2} \\
-    {Per}_2\left(permeance\right)=\frac{L_{PM}\times P}{2\pi(1-\delta)}Ln\frac{R_o}{R_i}
-
-Leakage flux between two magnets:
-
-.. math::
-
-    R_{L2}=\frac{2\pi(1-\delta)}{\mu_0l_mp\ln{\left(\sfrac{R_o}{R_i}\right)}}
-
-.. figure:: ../img/pm-leakage-flux-between-magnets.png
-    :align: center
-    :scale: 100 %
-    :name: pm-leakage-flux-between-magnets
-
-    : PM Flux Leakage Between magnets.
+    R_{L2} = \frac{2\pi(1-k_{pp})}{\mu_0 l_m p \ln{(D_o/D_i)} }
+    
 
 Rotor Back-Iron Model
 ---------------------
 
-Makinenin önemli bir parçası çeliğidir. Dışta iki rotorlu eksenel akılı makinelerde, makinenin sonlarında çelikler bulunmaktadır. Arka çeliği modellemek için bir FEM yazılımında kullanılan B(H) formülü şöyle tanımlanmıştır [1][4].
+An important part of the machine is rotor back-iron. For instance, machines with two-rotor AFPM machine has back-iron at the end of the PMs. The formula :math:`B(H)` used in a FEM software to model the back steel is defined as follows :cite:`sadeghierad:2008leakage`: 
 
 .. math::
 
     B\left(H\right)=\mu_0H+\frac{2J_S}{\pi}\arctan{\left(\frac{\pi(\mu_r-1)\mu_0H}{2J_S}\right)}
 
-Most of the permanent magnet machines, ferromagnetic material, commonly iron or steel, is located back of the magnets in order to complete the flux path. A FEM based software was described the formulation for modeling the back iron [Sadeghierad, M., et al., 2008]:
-
-.. math::
-
-    B_i\left(H_i\right)=\mu_0H_i+\frac{2J_S}{\pi}\arctan{\left(\frac{\pi\left(\mu_{ri}-1\right)\mu_0H_i}{2J_S}\right)}
-
-Coefficient J_S is determined from B-H graphics below:
-
-J_S katsayısı aşağıdaki şekilde gösterilmiştir:
+Coefficient :math:`J_S` is determined from B-H graphics (:numref:`back-iron-model`) below:
 
 .. figure:: ../img/back-iron-model.png
     :align: center
@@ -179,63 +152,45 @@ J_S katsayısı aşağıdaki şekilde gösterilmiştir:
 
     : Back-Iron Model.
 
-Böylece arka çeliğin modeli doğrusal olmayan bir manyetik dirençtir (Riron) [142].
-Çeliğin manyetik direncini hesaplamak için çeliğin manyetik geçirgenliği kullanılır. Çeliğin manyetik geçirgenliği başlangıçta iteratif olarak çeliğin akı yoğunluğu (1) denklemini ve BH eğrisini sağlayacak şekilde hesaplanır [12].
-
-Therefore, model of back iron is a nonlinear magnetic reluctance (R_{iron}) [Sadeghierad, M., et al., 2009].
-
-The permeability of back iron is used to calculate the reluctance of the back iron. 
+Nonlinear reluctance of back-iron can be calculated by
 
 .. math::
 
-    R_{iron}=\frac{F_i}{\phi_i}=\frac{H_il_i}{B_rA_i}
+    R_{iron}=\frac{F_i}{\phi_i}=\frac{H_il_i}{B_iA_i}
 
-Lombard et al., presented another method for calculating the back iron model. In this method the iron permeability is used to calculate the reluctance of iron with equation (8) that peak air gap flux density of two rotor, one stator machine. Iteratively calculating the core iron flux density that satisfies both (8) and the iron’s BH curve until the result converges sufficiently [Lombard and Kamper, 1999].
-
-.. math::
-
-    B_{agp}=\left(\frac{4R_m}{4R_m+4R_{ag}+R_{iron}}\right)B_r
-
-Fringing Effect Model
----------------------
-
-Saçak etkisini modellemek için her bir saçak yolunun manyetik iletkenliğini kullanılır. 4 tane geçiş vardır ve böylelikle dört manyetik iletkenlik ve manyetik direnç bulunmaktadır [144, 142]. Hava aralığının eşdeğer manyetik direnci Rg1 ile tüm bu dirençlerin paralelidir [144].
+Lombard et al., presented another method for calculating the back iron model. In this method the iron permeability is used to calculate the reluctance of iron. The magnetic permeability of the back-iron is initially calculated as iterative to provide the flux density equation of the back-iron and the B-H curve. The magnetic permeability of the back-iron is used to calculate the reluctance :cite:`lombard:1999analysis`. 
 
 .. math::
 
-    R_g=R_{g1}||\left(R_1||R_2||R_3||R_4\right)
-
-Kaçak etkisinin her bir yüzey için etkisi şu eşitlik ile elde edilebilir [144, 142]:
-
-.. math::
-
-    P_i\left(permeance\right)=\frac{W}{\pi}Ln\left(1+2\sqrt{\frac{x+x^2+xg}{g}}\right)
-
-Burada W: mıknatıs kalınlığı, x: saçağın başlangıç noktası ve g: hava aralığı olarak adlandırılmıştır [144]. Manyetik direnç ise şu eşitlikten elde edilebilir [142]:
-
-.. math::
-
-    R_i=\frac{1}{\mu_0\mu_{rPM}P_i}
-
-
-.. figure:: ../img/fringing-effect-model.png
-    :align: center
-    :scale: 100 %
-    :name: fringing-effect-model
-
-    : Fringing Effect Model.
+    B_g(peak)=\left(\frac{4R_m}{4R_m+4R_g+R_{iron}}\right)B_r
 
 Air Gap Model
 -------------
 
-Nüvesiz statorun her iki tarafında hava aralığı bulunmaktadır ve Rg1 ile modellenebilir:
+In electrical machines, the flux generally forms a path between two high magnetic permeable materials. Since the permeability of the air is low, fringing effect is seen on the edges of the material. To calculate the reluctance of the air gap, this fringing effect should be taken into account depending on the desired precision. Three different approaches can be used to model the flux path in the air gap as shown in :numref:`air-gap-model-1`. The simplest model is that completely ignores the effect of the fringing as in the :numref:`air-gap-model-1` a. Here is the reluctance :cite:`hanselman:2006`:
 
 .. math::
 
-    R_{g1}=\frac{\left(L_g+2g\right)}{\mu_0A_g} \\
-    A_g=\pi\left(\left(\frac{D_o}{2}\right)^2-\left(\frac{D_i}{2}\right)^2\right)\times\frac{1}{P}
+    R_{g1} = \frac{g}{\mu_0 A}
 
-There are number of techniques for modeling flux flow in an air-gap as depicted in Fig. The simplest model (Fig) ignores the fringing effect and model is exactly surface area of magnets. An improvement of this model which is accurate when g/A is small. The length g is added to the perimeter of surface area to obtain new surface area. Last refinement model the fringing flux as a separate permeance in parallel with the permeance of the direct flux path across the air-gap [Hanselman, 2003].
+When the air gap dimensions that the :math:`g/A` ratio between the two materials is smaller, then, a refine model (:numref:`air-gap-model-1` b) exists when the length g is added to the periphery A giving a larger area :math:`A'` :cite:`hanselman:2006`.
+
+.. math::
+
+    R_{g2} = \frac{g}{\mu_0 A'}
+
+Finally, it is assumed that the fringe flux follows a circular arc from the edge of a block, travels along a straight line through the space, followed by a circular arc to the other block. This circular-arc straight-line modeling can compute the flux flow with an analytical expression that is more realistic than any of the first two models shown in :numref:`air-gap-model-2` :cite:`hanselman:2006`.
+
+.. math::
+
+    P_f=\int_{0}^{X}{\frac{\mu_0L}{g+\pi x}dx}=\frac{\mu_0L}{\pi}\ln{\left(1+\frac{\pi X}{g}\right)}
+
+.. math::
+
+    R_{g3} = \frac{\pi}{\mu_0 l \ln{(1+\frac{pi X}{g})} }
+
+#The only unknown in this equation is X, the extent that the fringing permeance extends up the sides of the blocks. In those cases where X is not fixed by some other geometric constraint, it is commonly chosen to be some multiple of the air gap length. The exact value chosen is not that critical because the contribution of differential permeances decreases as one moves further from the air gap. Thus as X increases beyond about lOg, there is little change in the total air gap permeance :cite:`hanselman:2006`.
+
 
 .. figure:: ../img/air-gap-model-1.png
     :align: center
@@ -244,7 +199,7 @@ There are number of techniques for modeling flux flow in an air-gap as depicted 
 
     : Air gap model.
 
-In this figure, the fringing flux is assumed to follow a circular arc from the side of one block, travel in a straight line across the gap area, then follow a circular arc to the other block. The calculation of the air gap permeance using this circular-arc, straight-line approximation utilizes the fact that permeances add in parallel just as electrical conductances do. The air gap permeance Pg in Fig. 2.9 is equal to the sum of P_s and 4P_f (one P_f for each side of the block) [Hanselman, 2003].
+#In this figure, the fringing flux is assumed to follow a circular arc from the side of one block, travel in a straight line across the gap area, then follow a circular arc to the other block. The calculation of the air gap permeance using this circular-arc, straight-line approximation utilizes the fact that permeances add in parallel just as electrical conductances do. The air gap permeance Pg in Fig. 2.9 is equal to the sum of P_s and 4P_f (one P_f for each side of the block) :cite:`hanselman:2006`.
  
 .. figure:: ../img/air-gap-model-2.png
     :align: center
@@ -253,10 +208,5 @@ In this figure, the fringing flux is assumed to follow a circular arc from the s
 
     : Air gap model in detail.
 
-.. math::
 
-    P_f=\int_{0}^{X}{\frac{\mu_0L}{g+\pi x}dx}=\frac{\mu_0L}{\pi}\ln{\left(1+\frac{\pi X}{g}\right)}
-
-Magnetic Model of Zheng
------------------------
 

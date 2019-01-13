@@ -4,6 +4,14 @@ Permanent Magnet Machines
 
 .. toctree::
    :maxdepth: 2
+   :caption: Fundamentals
+   :name: sec-fundamentals
+   :numbered:
+
+   fundamentals/faradays-law
+
+.. toctree::
+   :maxdepth: 2
    :caption: General
    :name: sec-general
    :numbered:

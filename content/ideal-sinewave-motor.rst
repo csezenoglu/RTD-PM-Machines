@@ -102,7 +102,7 @@ EMF
 
 Emf equation can be derived two different approach:
 
-#The emf equation of the sinewave motor can be derived by considering the emf induced in the elementary group of conductors. Then, rms phase emf is
+#The emf equation of the sinewave motor can be derived by considering the emf induced in the elementary group of conductors. Then, rms phase emf is :cite:`miller:1989`
 
 .. math::
 
@@ -110,41 +110,66 @@ Emf equation can be derived two different approach:
 
 and line-line emf is :math:`\sqrt{3}E_{ph}`. 
 
-#The emf equation can also be derived from Faraday's law. This alternative method is included here because it is the basis of the phasor diagram and provides the means for calculating the inductive volt drop due to armature reaction. Faraday's law is more rigorous than the BLV formulation, but it is useful to show that for E both methods give the same result.
+#The emf equation can also be derived from Faraday's law. This alternative method is included here because it is the basis of the phasor diagram and provides the means for calculating the inductive volt drop due to armature reaction. Faraday's law is more rigorous than the BLV formulation, but it is useful to show that for E both methods give the same result. :cite:`miller:1989`
 
-#By Faraday's law, the instantaneous e.m.f. induced in the stationary phase winding of Fig. 5.1 is given by
+#By Faraday's law, the instantaneous e.m.f. induced in the stationary phase winding of Fig. 5.1 is given by :cite:`miller:1989`
 
 .. math::
 
     e = - \frac{d\Psi}{dt}
 
-#On open-circuit there is no current in the coil, and all the flux is due to the magnet. The flux through the elementary coil is
+#On open-circuit there is no current in the coil, and all the flux is due to the magnet. The flux through the elementary coil is :cite:`miller:1989`
 
 .. math::
 
     \phi = \frac{B_{peak}Dl}{p} \sin{(p\theta)}\cos{(\omega t + \alpha)}
 
-#The flux-linkage of the elementary coil is
+#The flux-linkage of the elementary coil is :cite:`miller:1989`
 
 .. math::
 
     d\Psi = \phi [\frac{N_s}{2} \sin{p \theta} d \theta]
 
-#The total flux-linkage of the winding is
+#The total flux-linkage of the winding is :cite:`miller:1989`
 
 .. math::
 
     \Psi = \frac{B_{peak}lr_1N_s\pi}{2p} \cos{(\omega t + \alpha)}
 
-#By Faraday's law the instantaneous phase e.m.f. is
+#By Faraday's law the instantaneous phase e.m.f. is :cite:`miller:1989`
 
 .. math::
 
     e = - \frac{d\Psi}{dt} = \omega \frac{B_{peak}lr_1N_s\pi}{2p} \sin{(\omega t + \alpha)}
 
-#The r.m.s. phase e.mf. is
+#The r.m.s. phase e.mf. is :cite:`miller:1989`
 
 .. math::
 
     E_{ph} = \frac{\omega}{\sqrt{2}} \frac{B_{peak}lr_1N_s\pi}{2p}
+
+Inductance of Phase Winding
+===========================
+
+:cite:`miller:1989`
+
+Synchronous Reactance
+=====================
+
+:cite:`miller:1989`
+
+Sinewave Motor with Practical Windings
+======================================
+
+:cite:`miller:1989`
+
+Phasor Diagrams
+===============
+
+:cite:`miller:1989`
+
+Sinawave Motor: Circle Diagram and Torque/Speed Characteristic
+==============================================================
+
+:cite:`miller:1989`
 
