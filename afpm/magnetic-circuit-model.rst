@@ -167,7 +167,16 @@ Lombard et al., presented another method for calculating the back iron model. In
 Air Gap Model
 -------------
 
-In electrical machines, the flux generally forms a path between two high magnetic permeable materials. Since the permeability of the air is low, fringing effect is seen on the edges of the material. To calculate the reluctance of the air gap, this fringing effect should be taken into account depending on the desired precision. Three different approaches can be used to model the flux path in the air gap as shown in :numref:`air-gap-model-1`. The simplest model is that completely ignores the effect of the fringing as in the :numref:`air-gap-model-1` a. Here is the reluctance :cite:`hanselman:2006`:
+In electrical machines, the flux generally forms a path between two high magnetic permeable materials. Since the permeability of the air is low, fringing effect is seen on the edges of the material. To calculate the reluctance of the air gap, this fringing effect should be taken into account depending on the desired precision. Three different approaches can be used to model the flux path in the air gap as shown in :numref:`air-gap-model-1`. 
+
+.. figure:: ../img/air-gap-model-1.png
+    :align: center
+    :scale: 100 %
+    :name: air-gap-model-1
+
+    : Air gap model.
+
+The simplest model is that completely ignores the effect of the fringing as in the :numref:`air-gap-model-1` a. Here is the reluctance:
 
 .. math::
 
@@ -179,28 +188,8 @@ When the air gap dimensions that the :math:`g/A` ratio between the two materials
 
     R_{g2} = \frac{g}{\mu_0 A'}
 
-Finally, it is assumed that the fringe flux follows a circular arc from the edge of a block, travels along a straight line through the space, followed by a circular arc to the other block. This circular-arc straight-line modeling can compute the flux flow with an analytical expression that is more realistic than any of the first two models shown in :numref:`air-gap-model-2` :cite:`hanselman:2006`.
+Finally, it is assumed that the fringe flux follows a circular arc from the edge of a block, travels along a straight line through the space, followed by a circular arc to the other block as shown in :numref:`air-gap-model-2`. This circular-arc straight-line modeling can compute the flux flow with an analytical expression that is more realistic than any of the first two models :cite:`hanselman:2006`.
 
-.. math::
-
-    P_f=\int_{0}^{X}{\frac{\mu_0L}{g+\pi x}dx}=\frac{\mu_0L}{\pi}\ln{\left(1+\frac{\pi X}{g}\right)}
-
-.. math::
-
-    R_{g3} = \frac{\pi}{\mu_0 l \ln{(1+\frac{pi X}{g})} }
-
-#The only unknown in this equation is X, the extent that the fringing permeance extends up the sides of the blocks. In those cases where X is not fixed by some other geometric constraint, it is commonly chosen to be some multiple of the air gap length. The exact value chosen is not that critical because the contribution of differential permeances decreases as one moves further from the air gap. Thus as X increases beyond about lOg, there is little change in the total air gap permeance :cite:`hanselman:2006`.
-
-
-.. figure:: ../img/air-gap-model-1.png
-    :align: center
-    :scale: 100 %
-    :name: air-gap-model-1
-
-    : Air gap model.
-
-#In this figure, the fringing flux is assumed to follow a circular arc from the side of one block, travel in a straight line across the gap area, then follow a circular arc to the other block. The calculation of the air gap permeance using this circular-arc, straight-line approximation utilizes the fact that permeances add in parallel just as electrical conductances do. The air gap permeance Pg in Fig. 2.9 is equal to the sum of P_s and 4P_f (one P_f for each side of the block) :cite:`hanselman:2006`.
- 
 .. figure:: ../img/air-gap-model-2.png
     :align: center
     :scale: 100 %
@@ -208,5 +197,13 @@ Finally, it is assumed that the fringe flux follows a circular arc from the edge
 
     : Air gap model in detail.
 
+.. math::
 
+    P_f=\int_{0}^{X}{\frac{\mu_0l}{g+\pi x}dx}=\frac{\mu_0l}{\pi}\ln{\left(1+\frac{\pi X}{g}\right)}
 
+.. math::
+
+    R_{g3} = \frac{\pi}{\mu_0 l \ln{(1+\frac{\pi X}{g})} }
+
+The unknown variable :math:`X` is the distance of the fringe effect from the edges and is not dependent on a variable. Generally, a few times of the air gap is selected. The total air gap reluctance change very little if it is increased for :math:`10g`.
+ 

@@ -8,6 +8,8 @@ Permanent Magnet Machines
    :name: sec-fundamentals
    :numbered:
 
+   fundamentals/electricity-and-magnetism
+   fundamentals/lorentz-force-law
    fundamentals/faradays-law
 
 .. toctree::
@@ -30,6 +32,7 @@ Permanent Magnet Machines
    afpm/introduction
    afpm/magnetic-field-in-airgap
    afpm/magnetic-circuit-model
+   afpm/winding
 
 .. toctree::
    :maxdepth: 2
@@ -47,6 +50,7 @@ Permanent Magnet Machines
     appendices/nomenclature
     appendices/zreferences
     dictionary/index
+    appendices/manufacturing
 
 .. Note:: 
 
