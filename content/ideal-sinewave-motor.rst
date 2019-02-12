@@ -15,6 +15,10 @@ In the ideal machine, stator conductors are distributed sinusoidal coductor-dens
 
     \frac{N_s}{2} \sin{p \theta} d \theta
 
+.. note::
+
+    "The sine-distributed winding is a hypothetical case with an infinite number of slots per pole per phase, the number of conductors per slot being modulated sinusoidally to produce a sine-distributed airgap m.m.f." T.J.E. Miller, 1989
+
 .. figure:: ../img/ideal-sinewave-brushless-motor.png
     :align: center
     :scale: 100 %
@@ -150,6 +154,14 @@ and line-line emf is :math:`\sqrt{3}E_{ph}`.
 
 Inductance of Phase Winding
 ===========================
+
+Self-inductance is the actual airgap inductance and assumed that the rotor stationary and unmagnetized, other phases are open-circuited, and leakage inductance is negligible. The self-inductance of the phase winding is obtained from the flux-linkage per ampere. 
+
+.. math::
+
+    L_s = \frac{\Psi_{peak}}{i}
+
+
 
 :cite:`miller:1989`
 
