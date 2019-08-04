@@ -11,6 +11,7 @@ Permanent Magnet Machines
    fundamentals/electricity-and-magnetism
    fundamentals/lorentz-force-law
    fundamentals/faradays-law
+   fundamentals/winding
 
 .. toctree::
    :maxdepth: 2
@@ -33,6 +34,10 @@ Permanent Magnet Machines
    afpm/magnetic-field-in-airgap
    afpm/magnetic-circuit-model
    afpm/winding
+   afpm/review
+   afpm/applications
+   afpm/design
+   afpm/afpm-gieras
 
 .. toctree::
    :maxdepth: 2
@@ -51,6 +56,9 @@ Permanent Magnet Machines
     appendices/zreferences
     dictionary/index
     appendices/manufacturing
+    appendices/journals
+    appendices/useful-links
+    appendices/literature-overview
 
 .. Note:: 
 

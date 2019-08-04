@@ -39,3 +39,20 @@ Abbreviation
 ************
 
 - PM: Permanent Magnet
+
+
+Others
+******
+
+S		görünür güç [VA] (power rating)
+Kw		sargı katsayısı (winding factor)
+Do		dış çap [m] (outer diameter)
+Di 		iç çap [m] (inner diameter)
+lm		mıknatıs kalınlığı [m]
+lg		hava aralığı mesafesi [m]
+Am		mıknatıs yüzey alanı [m2]
+Ap		kutup kesit alanı [m2]
+Bm		mıknatıs akı yoğunluğu [T]
+Hm		mıknatıs alan şiddeti [Atur/m]
+μ0		havanın manyetik geçirgenliği [4πx10-7]
+

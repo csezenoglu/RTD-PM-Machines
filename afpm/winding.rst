@@ -1,6 +1,17 @@
 Winding
 =======
 
+# The windings used in rotating electrical machines can be classified under two main headings: Concentrated and Distributed windings. #reviewden
+
+# Takano et al. investigated optimum values for magnet and armature winding thickness for one rotor one stator motors. Armature winding resistance, current and distribution of air gap magnetic flux density were determined analytically. In addition, starting torque expression was introduced. In order to keep the copper loss of armature winding minimum, the optimal ratio of the PM thickness to armature winding thickness is 2:1. The main drawback of calculations is some variables in equations should be measured from base motor for determining its values. There was a base motor that was measured for determining constants in equations and three motors for calculations [Takano et al., 1992]. #reviewden
+
+# Reed and Bakhoum investigated performance of PCB stator AFPM generator. Three phase steady state model was used. Power curve and some oscilloscope views of 16 poles, 4 coils per phase, 100 W at 500 rpm generator. Four layer PCB was constructed. They used off grid small wind turbine applications [Reed and Bakhoum, 2008]. #reviewden
+
+# Del Ferraro et al. investigated coil and magnet shape optimization of ironless AFPM machine. 3D FEA was used for analysis. Also torque equation was converted and it depends only coil shape. Optimization was carried out in terms of maximum torque produced per joule loss. Coil and magnet shape optimization and pole number effect on machine torque graphs were presented. Comparisons among different coil and magnet shapes that trapezoidal, rhomboidal, hexagonal and circular coils and trapezoidal, rectangular and circular magnets. In this work radial length and axial thickness were fixed. In conclusion, they noted that, best performances in terms of torque produced can be optained with circular shapes both on magnets and coils [Del Ferraro et al., 2007]. #reviewden
+
+# Kamper et al. investigated analysis of air cored nonoverlapping concentrated stator windings. Analytic calculations and 2D FEA were presented. Element, layer, coil and phase voltage steps were used for voltage calculations. In addition, stator winding factors were investigated in detail. Per unit torque and mass of copper graphs for different windings were also given. Compared with the torque performance of three different windings that were normal overlapping, concentrated coil and phase group windings. Concentrated windings had better torque performance than with normal overlapping windings. Also, they noted that higher pole number machines use less copper then low pole number machines [Kamper et al., 2008]. #reviewden
+
+
 The windings used in rotating electrical machines can be classified under two main headings: Concentrated and Distributed windings. 
 
 Hava nüveli sargılar daha düşük indüktansa sahiptir. [Caricchi et al., 1996]
@@ -249,3 +260,10 @@ When,
 H.C. Lovatt, V.S. Ramsden, and B.C. Mecrow, "Design of an inwheel motor for a solar-powered electric vehicle," Proc. IEE-B, vol.145, no.5, pp.402-408, 1998.
 
 Caricchi, F., F. Crescimbini, and A. Di Napoli. "Prototype of innovative wheel direct drive with water-cooled axial-flux PM motor for electric vehicle applications." Applied Power Electronics Conference and Exposition, 1996. APEC'96. Conference Proceedings 1996., Eleventh Annual. Vol. 2. IEEE, 1996.
+
+
+Others
+------
+
+Nüvesiz statorlu EASM makinelerde kullanılan bir diğer bobin profili, rhomboidal (paralel kenar şeklinde) bobindir. Trapezoidal sargılara göre daha kısa son bağlantılara sahiptir. Bobinin etkin kenarlarının eğimli düzeni stator içine su soğutma kanalları yerleştirmeyi olanaklı kılar. Rhomboidal sargının kötü tarafı ise torktaki azalmadır.
+
