@@ -1,69 +1,18 @@
-.. 1995 Design of slotless torus generators with reduced voltage regulation
+.. _afpm-magnetic-circuit-model:
 
 Magnetic Circuit Model
 ======================
 
-.. warning:: bu kısmın son hali tezde mevcut. AFPM-machines-v1.docx dosyasından güncellenecek.
-
-The analysis of systems with one or more closed magnetic flux path loops can be done with a magnetic circuit. An example of a magnetic circuit model of a two rotor and a coreless stator afpm machine is shown in :numref:`afpm-magnetic-circuit-model`.
+The analysis of systems with one or more closed magnetic flux path loops can be done with a magnetic circuit. An example of a magnetic circuit model of a two rotor and a coreless stator AFPM machine is shown in :numref:`afpm-magnetic-circuit-model-example`.
 
 .. figure:: ../img/afpm-magnetic-circuit-model.png
     :align: center
     :scale: 80 %
-    :name: afpm-magnetic-circuit-model
+    :name: afpm-magnetic-circuit-model-example
 
-    : Magnetic circuit model of a two rotor and a coreless stator afpm machine.
+    : Magnetic circuit model of a two rotor and a coreless stator AFPM machine.
 
-For accurate analysis with the magnetic circuit model, the model of each element should be obtained in detail. Sadeghierad et al. investigated magnetic circuit model elements of a high-speed AFPM generator :cite:`sadeghierad:2008leakage`, :cite:`sadeghierad:2009detail`. Zheng et al. investigated a one rotor one stator AFPM machine with using magnetic circuit model. Then a simplified model was obtained that ignores the back-iron reluctances :cite:`zheng:2005analysis`. 
-
-Zheng:
-
-Flux of permanent magnets and useful flux is calculated by
-
-.. math::
-
-    \phi_m=\phi_r\frac{P_g+4P_{ml}}{P_g+P_m+4P_{ml}} \\
-    \phi_u=\phi_r\frac{P_g}{P_g+P_m+4P_{ml}}
-
-Magnetic flux density of the air-gap, the stator back iron and the rotor back iron is given respectively.
-
-.. math::
-
-    B_g=\frac{\phi_u}{A_g}=\frac{B_rP_g}{P_g+P_m+4P_{ml}}\left(\frac{A_m}{A_g}\right) \\
-    B_{si}=\frac{\phi_u}{{2A}_{si}}=\frac{B_rP_g}{P_g+P_m+4P_{ml}}\left(\frac{A_m}{{2A}_{si}}\right) \\
-    B_{ri}=\frac{\phi_m}{{2A}_{ri}}=\frac{B_r\left(P_g+4P_{ml}\right)}{P_g+P_m+4P_{ml}}\left(\frac{A_m}{{2A}_{ri}}\right)
-
-Burada manyetik direnç eşitlikleri şöyle verilmiştir [2]:
-
-.. math::
-
-    R_m=\frac{L_{axm}}{\mu_rA_m} \\
-    R_g=\frac{L_g}{A_g}
-
-Rotor ve stator arka çeliğinin manyetik dirençleri ihmal edilirse basitleştirilmiş model elde edilir. Böylece manyetik akı ve kullanılabilir akı şöyle olur [2]:
-
-Buradan yola çıkarak tork ve elektromotor kuvvetin maksimum değeri şöyle bulunabilir [2][3]:
-
-.. math::
-
-    T=N_mk_dk_pB_gN_{tpp}i\left(R_o^2-R_i^2\right) \\
-    e_{max}=N_mk_dk_pB_gN_{tpp}\left(R_o^2-R_i^2\right)\omega_m
-
-Burada;
-
-:math:`N_m`	kutup sayısı
-
-:math:`k_d`	sargı dağılım katsayısı
-
-:math:`k_p`	sargı adım katsayısı
-
-:math:`N_{tpp}`	kutup başına, faz başına tur sayısı
-
-:math:`\omega_m`	rotor açısal hızı
-
-:math:`R`	yarıçap
-
-
+For accurate analysis with the magnetic circuit model, the model of each element should be obtained in detail. Sadeghierad et al. investigated magnetic circuit model elements of a high-speed AFPM generator :cite:`sadeghierad:2008leakage`, :cite:`sadeghierad:2009detail`. Zheng et al. investigated a one rotor one stator AFPM machine with using magnetic circuit model. Then a simplified model was obtained that ignores the back-iron reluctances :cite:`zheng:2005analysis`.
 
 Permanent Magnet Model
 ----------------------
@@ -208,22 +157,3 @@ Finally, it is assumed that the fringe flux follows a circular arc from the edge
     R_{g3} = \frac{\pi}{\mu_0 l \ln{(1+\frac{\pi X}{g})} }
 
 The unknown variable :math:`X` is the distance of the fringe effect from the edges and is not dependent on a variable. Generally, a few times of the air gap is selected. The total air gap reluctance change very little if it is increased for :math:`10g`.
-
-.. --------------------------------------------------------------------
-.. --------------------------------------------------------------------
-.. --------------------------------------------------------------------
-
-.. rubric:: Tezde yazılmış son güncel hal: 20190802
-
-The analysis of systems with one or more closed magnetic flux path loops can be done with a magnetic circuit. An example of a magnetic circuit model of a two rotor and a coreless stator AFPM machine is shown in Fig. 3.1.
-
-.. figure:: ../img/afpm-magnetic-circuit-model.png
-    :align: center
-    :scale: 80 %
-    :name: afpm-magnetic-circuit-model
-
-    : Magnetic circuit model of a two rotor and a coreless stator afpm machine.
-
-Fig. 3.1 : Magnetic circuit model of a two rotor and a coreless stator afpm machine.
-
-For accurate analysis with the magnetic circuit model, the model of each element should be obtained in detail. Sadeghierad et al. investigated magnetic circuit model elements of a high-speed AFPM generator [sadeghierad:2008], [sadeghierad:2009]. Zheng et al. investigated a one rotor one stator AFPM machine with using magnetic circuit model. Then a simplified model was obtained that ignores the back-iron reluctances [zheng:2005].

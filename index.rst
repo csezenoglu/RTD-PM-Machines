@@ -12,6 +12,7 @@ Permanent Magnet Machines
    fundamentals/lorentz-force-law
    fundamentals/faradays-law
    fundamentals/winding
+   fundamentals/energy-conversion
 
 .. toctree::
    :maxdepth: 2
@@ -38,6 +39,9 @@ Permanent Magnet Machines
    afpm/applications
    afpm/design
    afpm/afpm-gieras
+   afpm/deleted-parts
+   afpm/halbach
+   afpm/others
 
 .. toctree::
    :maxdepth: 2
@@ -59,6 +63,7 @@ Permanent Magnet Machines
     appendices/journals
     appendices/useful-links
     appendices/literature-overview
+    appendices/fingerprints
 
 .. Note:: 
 

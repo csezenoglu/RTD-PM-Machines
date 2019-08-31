@@ -124,3 +124,27 @@ Here;
     : afpm-model-for-laplace-solution
 
 In 2008, G.F. Price et al. designed a wind generator based on Bumby's analytical calculations :cite:`price:2008`.
+
+
+.. rubric:: Scalar
+
+==== =====================================================================================================================
+Year Paper Name
+---- ---------------------------------------------------------------------------------------------------------------------
+1974 Principles of a permanent-magnet axial-field d.c. machine #campbell
+1975 The magnetic circuit of an axial field DC electrical machine #campbell
+1992 A Method Predicting the Field in Permanent Magnet Axial-Field Motors #furlani
+1992 Measurement of Magnetic Fields in Axial Field Motors #lee
+1994 Computing the field in permanent-magnet axial-field motors #furlani
+2007 Computation of No-load and Armature Reaction Fields of an Axial-Flux Permanent-Magnet Synchronous Generator #chan xie
+==== =====================================================================================================================
+
+.. rubric:: Vector
+
+==== =====================================================================================================================
+Year Paper Name
+---- ---------------------------------------------------------------------------------------------------------------------
+1994 A three-dimensional field solution for axially-polarized multipole disks #furlani
+1997 A three-dimensional field solution for permanent-magnet axial-field motors #furlani #knewston
+1997 Field analysis and optimization of NdFeB axial field permanent magnet motors #furlani
+==== =====================================================================================================================

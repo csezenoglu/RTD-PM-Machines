@@ -18,8 +18,8 @@ span.eqno {
   float: right;
 }
 
-/*font colors to identify rewrite text*/
+/*font colors*/
 
-.rewrite{
+.red{
 color:#bf360c
 }

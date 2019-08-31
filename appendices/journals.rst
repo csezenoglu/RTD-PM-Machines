@@ -9,6 +9,10 @@ Journals
 - `IEEE Transactions on Magnetics (IEEE) <https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=20>`_
 - `Journal of Electromagnetic Analysis and Applications (SCIRP) <http://www.scirp.org/journal/jemaa/>`_     
 
+.. rubric:: Technology
+
+- `Kobelco Technology Review <https://www.kobelco.co.jp/english/ktr/back.html>`_
+
 Conferences
 ***********
 
