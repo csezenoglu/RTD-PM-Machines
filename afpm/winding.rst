@@ -267,3 +267,5 @@ Others
 
 Nüvesiz statorlu EASM makinelerde kullanılan bir diğer bobin profili, rhomboidal (paralel kenar şeklinde) bobindir. Trapezoidal sargılara göre daha kısa son bağlantılara sahiptir. Bobinin etkin kenarlarının eğimli düzeni stator içine su soğutma kanalları yerleştirmeyi olanaklı kılar. Rhomboidal sargının kötü tarafı ise torktaki azalmadır.
 
+
+# The design of electrical windings can be optimised using different criteria, such as the start-up behaviour, torque ripples or the maximum torque. [Handbook of Coil Winding p89]

@@ -23,6 +23,7 @@ Permanent Magnet Machines
    content/introduction
    content/ideal-sinewave-motor
    content/components
+   content/hairpin-winding
 
 
 .. toctree::
@@ -42,6 +43,7 @@ Permanent Magnet Machines
    afpm/deleted-parts
    afpm/halbach
    afpm/others
+   afpm/voltage-model
 
 .. toctree::
    :maxdepth: 2

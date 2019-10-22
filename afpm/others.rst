@@ -704,3 +704,53 @@ Bu tarz yüksek hızlı üreteçlerdeki en önemli tasarım parametresi olan ver
 
     : Şekil 5.6  Yüksek hızlı eksenel akılı üreteç [5].
 
+AA Eşdeğer Devre Modeli
+-----------------------
+
+Nüvesiz EASM makinelerin her fazı için eşdeğer devresi şekildeki gibi gösterilebilir.
+
+.. figure:: ../img/p31.png
+    :align: center
+    :scale: 100 %
+    :name: p31
+
+    : p31.
+
+Burada;
+
+- R_S	Stator direnci
+- L_S	Stator indüktansı
+- e_m	mıknatısların temel akı bağlantısının hava aralığında oluşturduğu emk
+- v_a	temel anlık faz gerilimi
+- i_a	temel anlık faz akımı
+
+Statordaki eddy akımı kayıpları R_e direnci ile ifade edilebilir. 
+
+Senkron indüktans, armatür reaksiyon indüktansı ve toplam açak indüktansını içerir. Kaçk indüktansın ifadesi şöyledir:
+
+L_l=L_{lr}+L_{ld}+L_{le}	(27)
+
+Burada;
+
+- L_{lr}	radyal kaçak indüktansı
+- L_{ld}	iletkenlerin radyal kısımlarının etrafındaki fark kaçak indüktansı
+- L_{le}	sargı sonları kaçak indüktansı
+
+Nüvesiz veya oluksuz makinelerin, klasik oluklu makinelerdeki gibi kaçak ve karşılıklı indüktansın açık bir ifadesi yoktur. Bundan dolayı L_{lr}, L_{ld} ve L_{le}'nin tam ifadelerini yazmak mümkün değildir [5].
+
+2B sonlu elemanlar analizi ile karşılıklı ve kaçak akı bağlantıları elde edilebilir, yalnız sargı sonlarının indüktansını iki boyutlu yapıdan ötürü elde edilemez. Sargı sonlarındaki kaçak indüktansı hesaplamak için literatürde bazı yöntemler bulunabilmektedir [5].
+
+Sargı sonlarındaki indüktansı hesaplamak için şu eşitlik kullanılabilir [5]:
+
+L_{le}=2\mu_0\frac{N^2l_{le}\psi_{le}}{pq}	(28)
+
+Burada;
+- p	kutup çifti sayısı
+- q	her bir fazdaki bir kutuptaki bobin sayısı
+- l_{le}	tek yüzlu (single-sided) sargı sonu uzunluğu
+
+[gieras kitap] içinde \psi_{le} şu eşitlik ile kestirilebileceği ortaya konmuştur [5].
+
+\psi_{le}\approx0,3q	(29)
+
+[5]: M. A.-M. M. M. Seyed Mohsen Hosseini, «Design, prototyping, and analysis of a low cost axial-flux coreless permanent-magnet generator,» IEEE TRANSACTIONS ON MAGNETICS, cilt 44, no. 1, p. 75, 2008.

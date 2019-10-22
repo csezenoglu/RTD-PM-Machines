@@ -1,6 +1,11 @@
 Journals
 ********
 
+.. rubric:: Electrical Engineering
+
+- `Archives of Electrical Engineering (AEE) - The Journal of Polish Academy of Sciences <http://www.aee.put.poznan.pl>`_
+- `Turkish Journal Of Electrical Engineering & Computer Sciences <https://journals.tubitak.gov.tr/elektrik/index.htm>`_
+
 .. rubric:: Physics
 
 - `Canadian Journal of Electrical and Computer Engineering (IEEE) <http://journal.ieee.ca/>`_

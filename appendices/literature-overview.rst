@@ -14,4 +14,5 @@ Year Paper Name
 1992 :red:`PhD Axial-ﬁeld permanent magnet disc machines with particular reference in TORUS`
 1998 :red:`Comparison between Surface mounted and buried Permanent Magnets in Linear Synchronous Motors`
 2001 :red:`Theorical modeling and operational analysis of a disc-type permanent magnet linear synchronous machine`
+2004 :red:`Design of axial-flux permanent magnet machines: thermal analysis`
 ==== =============================================================================================================
