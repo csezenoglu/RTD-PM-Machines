@@ -8,11 +8,14 @@ Permanent Magnet Machines
    :name: sec-fundamentals
    :numbered:
 
+   fundamentals/electric-machines
    fundamentals/electricity-and-magnetism
    fundamentals/lorentz-force-law
    fundamentals/faradays-law
    fundamentals/winding
    fundamentals/energy-conversion
+   fundamentals/notes
+   fundamentals/others
 
 .. toctree::
    :maxdepth: 2
@@ -52,6 +55,14 @@ Permanent Magnet Machines
    :numbered:   
 
    ipm/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: JMAG
+   :name: sec-jmag
+   :numbered:   
+
+   jmag/index
 
 .. toctree::
     :maxdepth: 2
